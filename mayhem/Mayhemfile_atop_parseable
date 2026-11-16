@@ -1,0 +1,8 @@
+project: savantenvs/atop
+target: atop_parseable
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/atop_parseable/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/bin/atop -r @@ -P ALL
+    timeout: 3

@@ -1,0 +1,80 @@
+
+
+ATOP - atopfuzz  2026/11/16 15:52:42          ------------------7  8m58s elapsed
+PRC | sys    0.38s | user   0.13s | #proc      6 | #tidle     0 | no  procacct |
+CPU | sys      10% | user     32% | irq       2% | idle   1527% | wait     30% |
+cpu | sys       1% | user      2% | irq       0% | idle     92% | #0015 wa  5% |
+cpu | sys       1% | user      2% | irq       0% | idle     93% | #0001 wa  4% |
+cpu | sys       1% | user      2% | irq       0% | idle     97% | #0008 wa  1% |
+cpu | sys       1% | user      2% | irq       0% | idle     96% | #0007 wa  1% |
+cpu | sys       1% | user      2% | irq       1% | idle     90% | #0000 wa  6% |
+cpu | sys       1% | user      2% | irq       0% | idle     96% | #0004 wa  1% |
+cpu | sys       1% | user      2% | irq       0% | idle     95% | #0005 wa  2% |
+cpu | sys       1% | user      2% | irq       0% | idle     97% | #0010 wa  1% |
+cpu | sys       1% | user      2% | irq       0% | idle     95% | #0009 wa  2% |
+cpu | sys       1% | user      2% | irq       0% | idle     96% | #0013 wa  1% |
+cpu | sys       1% | user      2% | irq       0% | idle     97% | #0006 wa  1% |
+cpu | sys       1% | user      2% | irq       0% | idle     96% | #0003 wa  1% |
+cpu | sys       1% | user      2% | irq       0% | idle     97% | #0011 wa  1% |
+cpu | sys       1% | user      2% | irq       0% | idle     96% | #0002 wa  1% |
+cpu | sys       1% | user      2% | irq       0% | idle     96% | #0012 wa  1% |
+cpu | sys       1% | user      2% | irq       0% | idle     97% | #0014 wa  0% |
+CPL | numcpu    16 | avg1    0.05 | avg5    0.45 | csw  5175363 | intr 3660769 |
+MEM | tot    62.8G | free   50.5G | avail  60.4G | cache  10.0G | slab  664.7M |
+MEM | numnode    1 | shmem  86.9M | shrss   0.0M | shswp   0.0M | pgtab  16.2M |
+SWP | tot     0.0M | free    0.0M | swcac   0.0M | vmcom   5.8G | vmlim  31.4G |
+PAG | migrate    0 | pgin  232832 | pgout 3016e3 | swout      0 | oomkill    0 |
+PSI | cpusome   0% | memsome   0% | memfull   0% | iosome    6% | iofull    6% |
+LVM |         dm-0 | busy      1% | read    7598 | write      0 | avio 0.44 ms |
+DSK |          sda | busy     16% | read   17612 | write 120647 | avio 0.60 ms |
+NET | eth0    ---- | pcki       0 | pcko       2 | si    0 Kbps | so    0 Kbps |
+*** System and Process Activity since Boot ***                      Rawfile view
+    PID SYSCPU USRCPU BDELAY  VGROW  RGROW  RDDSK  WRDSK   CPU CMD            
+     46  0.37s  0.12s  0.00s   2.5M   1.4M     0B     0B    0% yes            
+      1  0.01s  0.01s  0.00s   4.0M   3.0M     0B   5.4M    0% bash           
+     48  0.00s  0.00s  0.00s  12.9M   5.6M     0B     0B    0% atop           
+     42  0.00s  0.00s  0.00s   4.0M   1.6M     0B 200.0M    0% bash           
+     44  0.00s  0.00s  0.00s   2.5M   1.5M     0B     0B    0% sleep          
+     45  0.00s  0.00s  0.00s   2.5M   1.5M     0B     0B    0% sleep          
+
+
+ATOP - atopfuzz   2026/11/16 15:52:43           ------------------7   1s elapsed
+PRC | sys    0.71s | user   0.29s | #proc      6 | #tidle     0 | no  procacct |
+CPU | sys      74% | user     31% | irq       0% | idle   1509% | wait      1% |
+cpu | sys      71% | user     29% | irq       0% | idle      0% | #0002 wa  0% |
+cpu | sys       0% | user      1% | irq       0% | idle     99% | #0004 wa  0% |
+cpu | sys       1% | user      0% | irq       0% | idle     99% | #0007 wa  0% |
+cpu | sys       0% | user      1% | irq       0% | idle     99% | #0013 wa  0% |
+CPL | numcpu    16 | avg1    0.05 | avg5    0.45 | csw     1863 | intr    2377 |
+MEM | tot    62.8G | free   50.5G | avail  60.4G | cache  10.0G | slab  664.9M |
+MEM | numnode    1 | shmem  86.9M | shrss   0.0M | shswp   0.0M | pgtab  16.2M |
+SWP | tot     0.0M | free    0.0M | swcac   0.0M | vmcom   5.8G | vmlim  31.4G |
+PAG | migrate    0 | pgin       0 | pgout    139 | swout      0 | oomkill    0 |
+PSI | cpusome   0% | memsome   0% | memfull   0% | iosome    0% | iofull    0% |
+DSK |          sda | busy      2% | read       0 | write     54 | avio 0.33 ms |
+NET | eth0    ---- | pcki       0 | pcko       1 | si    0 Kbps | so    0 Kbps |
+
+    PID SYSCPU USRCPU BDELAY  VGROW  RGROW  RDDSK  WRDSK   CPU CMD            
+     46  0.71s  0.29s  0.00s     0B     0B     0B     0B  100% yes            
+     48  0.00s  0.00s  0.00s   1.2M   1.4M     0B   4.0K    0% atop           
+
+
+ATOP - atopfuzz   2026/11/16 15:52:44           ------------------7   1s elapsed
+PRC | sys    0.71s | user   0.31s | #proc      6 | #tidle     0 | no  procacct |
+CPU | sys      72% | user     31% | irq       0% | idle   1508% | wait      2% |
+cpu | sys      71% | user     29% | irq       0% | idle      0% | #0002 wa  0% |
+cpu | sys       0% | user      1% | irq       0% | idle     99% | #0001 wa  0% |
+cpu | sys       1% | user      0% | irq       0% | idle     99% | #0013 wa  0% |
+cpu | sys       1% | user      0% | irq       0% | idle     99% | #0015 wa  0% |
+cpu | sys       0% | user      0% | irq       1% | idle     99% | #0000 wa  0% |
+CPL | numcpu    16 | avg1    0.05 | avg5    0.45 | csw     1743 | intr    2231 |
+MEM | tot    62.8G | free   50.5G | avail  60.4G | cache  10.0G | slab  664.9M |
+MEM | numnode    1 | shmem  86.9M | shrss   0.0M | shswp   0.0M | pgtab  16.2M |
+SWP | tot     0.0M | free    0.0M | swcac   0.0M | vmcom   5.8G | vmlim  31.4G |
+PAG | migrate    0 | pgin       0 | pgout    138 | swout      0 | oomkill    0 |
+PSI | cpusome   0% | memsome   0% | memfull   0% | iosome    0% | iofull    0% |
+DSK |          sda | busy      2% | read       0 | write     54 | avio 0.33 ms |
+
+    PID SYSCPU USRCPU BDELAY  VGROW  RGROW  RDDSK  WRDSK   CPU CMD            
+     46  0.71s  0.30s  0.00s     0B     0B     0B     0B  100% yes            
+     48  0.00s  0.01s  0.00s 268.0K 128.0K     0B   4.0K    1% atop           
