@@ -1,0 +1,19 @@
+# own layouts and thresholds
+flags         Aaf1
+interval      5
+linelen       132
+maxlinecpu    4
+maxlinedisk   3
+cpucritperc   90
+memcritperc   80
+almostcrit    80
+colorinfo     green
+coloralmost   yellow
+colorcritical red
+ownprocline   PID:20 PPID:10 SYSCPU:15 USRCPU:15 VGROW:40 RGROW:45 COMMAND-LINE:50
+ownsysprcline PRCSYS:8 PRCUSER:8 BLANKBOX:0 PRCNPROC:7 PRCNZOMBIE:5 PRCCLONES:4 BLANKBOX:0 PRCNNEXIT:6
+ownallcpuline CPUSYS:8 CPUUSER:7 CPUIRQ:4 BLANKBOX:0 CPUIDLE:5 CPUWAIT:6 BLANKBOX:0 CPUSTEAL:1 CPUGUEST:3
+ownmemline    MEMTOT:2 MEMFREE:5 MEMCACHE:3 MEMDIRTY:1 MEMBUFFER:3 MEMSLAB:3
+owndskline    DSKNAME:8 DSKBUSY:7 DSKNREAD:6 DSKNWRITE:6 DSKAVIO:5
+ownnetifline  NETNAME:8 NETPCKI:7 NETPCKO:7 NETSPEEDIN:6 NETSPEEDOUT:6
+atopsarflags  -x

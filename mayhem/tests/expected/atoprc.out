@@ -1,0 +1,93 @@
+
+
+ATOP - atopfuzz                   2026/11/16 15:52:42                           --f-ax1----------A7                    8m58s elapsed
+PRC | sys    0.38s  | user   0.13s  |               | #proc      6 |  #zombie    0 |  clones  19/s |               |  no  procacct |
+CPU | sys      10%  | user     32%  | irq       2%  | idle   1527% |  wait     30% |               |  steal     0% |  guest     0% |
+cpu | sys       1%  | user      2%  | irq       0%  | idle     92% |  #0015 wa  5% |  steal     0% |  guest     0% |  curf 2799MHz |
+cpu | sys       1%  | user      2%  | irq       0%  | idle     93% |  #0001 wa  4% |  steal     0% |  guest     0% |  curf 2799MHz |
+cpu | sys       1%  | user      2%  | irq       0%  | idle     97% |  #0008 wa  1% |  steal     0% |  guest     0% |  curf 2799MHz |
+cpu | sys       1%  | user      2%  | irq       0%  | idle     96% |  #0007 wa  1% |  steal     0% |  guest     0% |  curf 2799MHz |
+CPL | numcpu    16  |               | avg1    0.05  | avg5    0.45 |  avg15   0.34 |               |  csw   9620/s |  intr  6804/s |
+MEM | tot    62.8G  | free   50.5G  |               | cache  10.0G |  dirty 205.6M |  buff  190.9M |               |  slab  664.7M |
+MEM | numnode    1  |               | shmem  86.9M  | shrss   0.0M |  shswp   0.0M |  tcpsk   0.3M |  udpsk   0.0M |  pgtab  16.2M |
+SWP | tot     0.0M  | free    0.0M  | swcac   0.0M  | zswap   0.0M |  zstor   0.0M |               |  vmcom   5.8G |  vmlim  31.4G |
+PAG | compact  0/s  | numamig  0/s  | migrate  0/s  | pgin   433/s |  pgout 5606/s |  swin     0/s |  swout    0/s |  oomkill  0/s |
+PSI | cpusome   0%  | memsome   0%  | memfull   0%  | iosome    6% |  iofull    6% |  cs     0/0/0 |  ms     0/0/0 |  is     0/0/3 |
+LVM |         dm-0  |               | busy      1%  | read    14/s |               |  write    0/s |  avio 0.44 ms |               |
+DSK |          sda  |               | busy     16%  | read    33/s |               |  write  224/s |  avio 0.60 ms |               |
+NFC | rpc      0/s  | read     0/s  | write    0/s  | retxmit  0/s |  autref   0/s |               |               |               |
+NFS | rpc      0/s  | cread    0/s  | cwrit    0/s  | MBcr/s   0.0 |  MBcw/s   0.0 |  nettcp   0/s |  netudp   0/s |  badcln   0/s |
+NET | transport     | tcpi     0/s  | tcpo     0/s  | udpi     0/s |  udpo     0/s |  tcpao    0/s |  tcppo    0/s |  tcprs    0/s |
+NET | network       | ipi      0/s  | ipo      0/s  | ipfrw    0/s |  deliv    0/s |               |  icmpi    0/s |  icmpo    0/s |
+NET | eth0    ----  |               | pcki     0/s  | pcko     0/s |               |  si    0 Kbps |  so    0 Kbps |               |
+NET | lo      ----  |               | pcki     0/s  | pcko     0/s |               |  si    0 Kbps |  so    0 Kbps |               |
+*** System and Process Activity since Boot ***                      Rawfile view
+    PID SYSCPU USRCPU RDELAY BDELAY  VGROW  RGROW  RDDSK  WRDSK RUID     EUID     ST EXC  THR S CPUNR  ADSK CMD            
+     42  0.00s  0.00s  0.00s  0.00s   4.0M   1.6M   0B/s 381K/s mayhem   mayhem   N-   -    1 S    13   97% bash           
+      1  0.01s  0.01s  0.00s  0.00s   4.0M   3.0M   0B/s  10K/s mayhem   mayhem   N-   -    1 S    14    3% bash           
+     46  0.37s  0.12s  0.00s  0.00s   2.5M   1.4M   0B/s   0B/s mayhem   mayhem   N-   -    1 R     2    0% yes            
+     48  0.00s  0.00s  0.00s  0.00s  12.9M   5.6M   0B/s   0B/s mayhem   mayhem   N-   -    1 R    13    0% atop           
+     44  0.00s  0.00s  0.00s  0.00s   2.5M   1.5M   0B/s   0B/s mayhem   mayhem   N-   -    1 S     4    0% sleep          
+     45  0.00s  0.00s  0.00s  0.00s   2.5M   1.5M   0B/s   0B/s mayhem   mayhem   N-   -    1 S     0    0% sleep          
+
+
+ATOP - atopfuzz                    2026/11/16 15:52:43                            --f-ax1----------A7                     1s elapsed
+PRC | sys    0.71s  | user   0.29s  |               | #proc      6 |  #zombie    0 |  clones   0/s |               |  no  procacct |
+CPU | sys      74%  | user     31%  | irq       0%  | idle   1509% |  wait      1% |               |  steal     0% |  guest     0% |
+cpu | sys      71%  | user     29%  | irq       0%  | idle      0% |  #0002 wa  0% |  steal     0% |  guest     0% |  curf 2799MHz |
+cpu | sys       0%  | user      1%  | irq       0%  | idle     99% |  #0004 wa  0% |  steal     0% |  guest     0% |  curf 2799MHz |
+cpu | sys       1%  | user      0%  | irq       0%  | idle     99% |  #0007 wa  0% |  steal     0% |  guest     0% |  curf 2799MHz |
+cpu | sys       0%  | user      0%  | irq       0%  | idle     99% |  #0010 wa  1% |  steal     0% |  guest     0% |  curf 2799MHz |
+CPL | numcpu    16  |               | avg1    0.05  | avg5    0.45 |  avg15   0.34 |               |  csw   1863/s |  intr  2377/s |
+MEM | tot    62.8G  | free   50.5G  |               | cache  10.0G |  dirty 206.0M |  buff  190.9M |               |  slab  664.9M |
+MEM | numnode    1  |               | shmem  86.9M  | shrss   0.0M |  shswp   0.0M |  tcpsk   0.3M |  udpsk   0.0M |  pgtab  16.2M |
+SWP | tot     0.0M  | free    0.0M  | swcac   0.0M  | zswap   0.0M |  zstor   0.0M |               |  vmcom   5.8G |  vmlim  31.4G |
+PAG | compact  0/s  | numamig  0/s  | migrate  0/s  | pgin     0/s |  pgout  139/s |  swin     0/s |  swout    0/s |  oomkill  0/s |
+PSI | cpusome   0%  | memsome   0%  | memfull   0%  | iosome    0% |  iofull    0% |  cs     0/0/0 |  ms     0/0/0 |  is     0/0/3 |
+LVM |         dm-0  |               | busy      0%  | read     0/s |               |  write    0/s |  avio  0.0 ns |               |
+DSK |          sda  |               | busy      2%  | read     0/s |               |  write   54/s |  avio 0.33 ms |               |
+NFC | rpc      0/s  | read     0/s  | write    0/s  | retxmit  0/s |  autref   0/s |               |               |               |
+NFS | rpc      0/s  | cread    0/s  | cwrit    0/s  | MBcr/s   0.0 |  MBcw/s   0.0 |  nettcp   0/s |  netudp   0/s |  badcln   0/s |
+NET | transport     | tcpi     0/s  | tcpo     0/s  | udpi     0/s |  udpo     0/s |  tcpao    0/s |  tcppo    0/s |  tcprs    0/s |
+NET | network       | ipi      0/s  | ipo      0/s  | ipfrw    0/s |  deliv    0/s |               |  icmpi    0/s |  icmpo    0/s |
+NET | eth0    ----  |               | pcki     0/s  | pcko     1/s |               |  si    0 Kbps |  so    0 Kbps |               |
+NET | lo      ----  |               | pcki     0/s  | pcko     0/s |               |  si    0 Kbps |  so    0 Kbps |               |
+
+    PID SYSCPU USRCPU RDELAY BDELAY  VGROW  RGROW  RDDSK  WRDSK RUID     EUID     ST EXC  THR S CPUNR  ADSK CMD            
+     48  0.00s  0.00s  0.00s  0.00s   1.2M   1.4M   0B/s 4.0K/s mayhem   mayhem   --   -    1 R    13  100% atop           
+     46  0.71s  0.29s  0.00s  0.00s     0B     0B   0B/s   0B/s mayhem   mayhem   --   -    1 R     2    0% yes            
+      1  0.00s  0.00s  0.00s  0.00s     0B     0B   0B/s   0B/s mayhem   mayhem   --   -    1 S    14    0% bash           
+     42  0.00s  0.00s  0.00s  0.00s     0B     0B   0B/s   0B/s mayhem   mayhem   --   -    1 S    13    0% bash           
+     44  0.00s  0.00s  0.00s  0.00s     0B     0B   0B/s   0B/s mayhem   mayhem   --   -    1 S     4    0% sleep          
+     45  0.00s  0.00s  0.00s  0.00s     0B     0B   0B/s   0B/s mayhem   mayhem   --   -    1 S     0    0% sleep          
+
+
+ATOP - atopfuzz                    2026/11/16 15:52:44                            --f-ax1----------A7                     1s elapsed
+PRC | sys    0.71s  | user   0.31s  |               | #proc      6 |  #zombie    0 |  clones   1/s |               |  no  procacct |
+CPU | sys      72%  | user     31%  | irq       0%  | idle   1508% |  wait      2% |               |  steal     0% |  guest     0% |
+cpu | sys      71%  | user     29%  | irq       0%  | idle      0% |  #0002 wa  0% |  steal     0% |  guest     0% |  curf 2799MHz |
+cpu | sys       0%  | user      1%  | irq       0%  | idle     99% |  #0001 wa  0% |  steal     0% |  guest     0% |  curf 2799MHz |
+cpu | sys       0%  | user      0%  | irq       0%  | idle    100% |  #0003 wa  0% |  steal     0% |  guest     0% |  curf 2799MHz |
+cpu | sys       1%  | user      0%  | irq       0%  | idle     99% |  #0013 wa  0% |  steal     0% |  guest     0% |  curf 2799MHz |
+CPL | numcpu    16  |               | avg1    0.05  | avg5    0.45 |  avg15   0.34 |               |  csw   1743/s |  intr  2231/s |
+MEM | tot    62.8G  | free   50.5G  |               | cache  10.0G |  dirty 206.0M |  buff  190.9M |               |  slab  664.9M |
+MEM | numnode    1  |               | shmem  86.9M  | shrss   0.0M |  shswp   0.0M |  tcpsk   0.3M |  udpsk   0.0M |  pgtab  16.2M |
+SWP | tot     0.0M  | free    0.0M  | swcac   0.0M  | zswap   0.0M |  zstor   0.0M |               |  vmcom   5.8G |  vmlim  31.4G |
+PAG | compact  0/s  | numamig  0/s  | migrate  0/s  | pgin     0/s |  pgout  138/s |  swin     0/s |  swout    0/s |  oomkill  0/s |
+PSI | cpusome   0%  | memsome   0%  | memfull   0%  | iosome    0% |  iofull    0% |  cs     0/0/0 |  ms     0/0/0 |  is     0/0/3 |
+LVM |         dm-0  |               | busy      0%  | read     0/s |               |  write    0/s |  avio  0.0 ns |               |
+DSK |          sda  |               | busy      2%  | read     0/s |               |  write   54/s |  avio 0.33 ms |               |
+NFC | rpc      0/s  | read     0/s  | write    0/s  | retxmit  0/s |  autref   0/s |               |               |               |
+NFS | rpc      0/s  | cread    0/s  | cwrit    0/s  | MBcr/s   0.0 |  MBcw/s   0.0 |  nettcp   0/s |  netudp   0/s |  badcln   0/s |
+NET | transport     | tcpi     0/s  | tcpo     0/s  | udpi     0/s |  udpo     0/s |  tcpao    0/s |  tcppo    0/s |  tcprs    0/s |
+NET | network       | ipi      0/s  | ipo      0/s  | ipfrw    0/s |  deliv    0/s |               |  icmpi    0/s |  icmpo    0/s |
+NET | lo      ----  |               | pcki     0/s  | pcko     0/s |               |  si    0 Kbps |  so    0 Kbps |               |
+NET | eth0    ----  |               | pcki     0/s  | pcko     0/s |               |  si    0 Kbps |  so    0 Kbps |               |
+
+    PID SYSCPU USRCPU RDELAY BDELAY  VGROW  RGROW  RDDSK  WRDSK RUID     EUID     ST EXC  THR S CPUNR  ADSK CMD            
+     48  0.00s  0.01s  0.00s  0.00s 268.0K 128.0K   0B/s 4.0K/s mayhem   mayhem   --   -    1 R    13  100% atop           
+     46  0.71s  0.30s  0.00s  0.00s     0B     0B   0B/s   0B/s mayhem   mayhem   --   -    1 R     2    0% yes            
+      1  0.00s  0.00s  0.00s  0.00s     0B     0B   0B/s   0B/s mayhem   mayhem   --   -    1 S    14    0% bash           
+     42  0.00s  0.00s  0.00s  0.00s     0B     0B   0B/s   0B/s mayhem   mayhem   --   -    1 S    13    0% bash           
+     44  0.00s  0.00s  0.00s  0.00s     0B     0B   0B/s   0B/s mayhem   mayhem   --   -    1 S     4    0% sleep          
+     45  0.00s  0.00s  0.00s  0.00s     0B     0B   0B/s   0B/s mayhem   mayhem   --   -    1 S     0    0% sleep          

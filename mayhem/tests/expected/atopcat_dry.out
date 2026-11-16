@@ -1,0 +1,6 @@
+Logs created by atop version 2.13
+
+date       time         interval  comprsys  comprproc  comprcgr comppids
+2026/11/16 15:52:42          538      2165        887        69       24  boot
+2026/11/16 15:52:43            1      1841        511        64       24  
+2026/11/16 15:52:44            1      1845        512        65       24  

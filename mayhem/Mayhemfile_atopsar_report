@@ -1,0 +1,8 @@
+project: savantenvs/atop
+target: atopsar_report
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/atopsar_report/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/bin/atopsar -r @@ -A
+    timeout: 3

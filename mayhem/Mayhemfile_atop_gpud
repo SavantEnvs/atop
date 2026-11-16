@@ -1,0 +1,8 @@
+project: savantenvs/atop
+target: atop_gpud
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/atop_gpud/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/bin/atop_gpud @@ -k -P GPU,PRE 1 1
+    timeout: 10
